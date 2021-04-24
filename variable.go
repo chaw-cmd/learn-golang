@@ -3,7 +3,6 @@ package main
 import (
 	"fmt"
 	"math"
-	"runtime"
 )
 
 func enums() {
@@ -72,10 +71,10 @@ func variableInitValuesTypeDeduction2() {
 	fmt.Println(a, s, b, c)
 }
 
-func main() {
-	fmt.Println("hello, there")
-	fmt.Println(runtime.GOARCH)
-
-	//variableInitValuesTypeDeduction2()
-	triangle()
-}
+//func main() {
+//	fmt.Println("hello, there")
+//	fmt.Println(runtime.GOARCH)
+//
+//	//variableInitValuesTypeDeduction2()
+//	triangle()
+//}
