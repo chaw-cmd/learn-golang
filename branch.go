@@ -7,19 +7,19 @@ import (
 	"runtime"
 )
 
-func main() {
-	//readFile2()
-	//apply(plus, 1, 3)
-	//apply(func(a int, b int) int {
-	//	return a + b
-	//}, 100, 1)
-
-	a, b := 3, 4
-	swap_ref(&a, &b)
-	a, b = swap_val(a, b)
-	println(a, b)
-
-}
+//func main() {
+//	//readFile2()
+//	//apply(plus, 1, 3)
+//	//apply(func(a int, b int) int {
+//	//	return a + b
+//	//}, 100, 1)
+//
+//	a, b := 3, 4
+//	swap_ref(&a, &b)
+//	a, b = swap_val(a, b)
+//	println(a, b)
+//
+//}
 
 func swap_ref(a, b *int) {
 	*a, *b = *b, *a
