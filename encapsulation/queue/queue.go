@@ -2,13 +2,13 @@ package queue
 
 // Queue
 // implement int queue using int slice
-type Queue []int
+type Queue []interface{}
 
-func (q *Queue) Push(v int) {
+func (q *Queue) Push(v interface{}) {
 	*q = append(*q, v)
 }
 
-func (q *Queue) Poll() int {
+func (q *Queue) Poll() interface{} {
 	head := (*q)[0]
 	*q = (*q)[1:]
 	return head
