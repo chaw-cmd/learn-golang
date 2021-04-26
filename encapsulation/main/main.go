@@ -1,6 +1,10 @@
 package main
 
-import "GoDemoProj/encapsulation/tree"
+import (
+	"GoDemoProj/encapsulation/tree"
+
+	"go.uber.org/zap"
+)
 
 func main() {
 	//createTreeNode()
@@ -8,6 +12,9 @@ func main() {
 	root.PrintTreeNodeWithPrefix("init value")
 	root.SetNodeValue(0)
 	root.PrintTreeNodeWithPrefix("updated value")
+
+	logger, _ := zap.NewProduction()
+	logger.Warn("Logger test, warning !!")
 }
 
 type NewNode struct {
