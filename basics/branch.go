@@ -21,7 +21,7 @@ import (
 //
 //}
 
-func swap_ref(a, b *int) {
+func SwapRef(a, b *int) {
 	*a, *b = *b, *a
 }
 
